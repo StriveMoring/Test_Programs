@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄金矿工</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: #87CEEB;
+        }
+        #gameInfo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameInfo">分数: <span id="score">0</span> 时间: <span id="time">60</span></div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
